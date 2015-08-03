@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modelFile format="8" xmlns="http://www.iar.com/visualSTATE/2011/Modelfile">
+
+  <topstate excluded="false" guid="C1A1BD11-B70E-4E12-9DC5-8C4A821D340E" name="TopLevelStateMachine1">
+    <expl></expl>
+    <alias></alias>
+    <position bottom="159" left="26" right="344" top="26"/>
+    <stateProperties labelHeight="42" wrapText="true">
+      <properties value="65537"/>
+    </stateProperties>
+    <elements>
+      <actionsFolder guid="46841F5E-713E-4FE6-8D19-66237F208854" name="root">
+        <actionFunction definition="false" guid="C67CD198-C18B-45E3-8073-335811B34EB7" name="Action1" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="BD00E5F1-C128-401E-9A7C-B65EA7F1CCF6" name="ToggleLed" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="DF542AE5-331C-49AF-BDB4-E1A2549DFEC7" name="aBoard_Init" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="228F8E87-5B5A-473A-90DD-7450436D66F6" name="aDebounce" returnType="VS_VOID">
+          <expl>Chequea si el contador del Debounce esta en 0 o no y si esta lo recarga y togglea </expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="51AEB0CB-113F-47C0-86E4-995B0194ACFE" name="aDesactivarFlag" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="494B1ABB-DE01-4113-8807-2ED7B75D5D94" name="aGPIO_Config" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="7137EC36-EFA9-44CB-B936-FF6B3126B75A" name="aLedOff" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="177E434F-A71A-44FA-BC2D-3BF0AF950584" name="aLedOn" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="7CE041BE-3A5F-48E1-B3B5-AB994CE01895" name="aRecargaDebounce" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="47A83A3E-2DBA-4917-B832-4E9A01602CB3" name="aSysTickInit" returnType="VS_VOID">
+          <expl>Inicializa el Timer SysTick</expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="8001C467-8FC9-4EC9-B620-D599CD2DF0D4" name="aSysTickInit_stop" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="0CC380AC-27D2-48C9-9774-9D3B785E86B2" name="aSystemCoreClockUpdate" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="952FFD29-038F-4EC0-AF43-E5F435BE5AF3" name="aTimerDebounce" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+        <actionFunction definition="false" guid="9E7817A0-61DB-427A-BB6E-99347F772B15" name="aTriggerFlagToggle" returnType="VS_VOID">
+          <expl></expl>
+        </actionFunction>
+      </actionsFolder>
+      <constantsFolder guid="6AEFD124-B450-4395-B3A6-7656C12F5209" name="root"/>
+      <eventsFolder guid="918A895E-4D59-47B9-A699-D47F0A5D04B5" name="root">
+        <event definition="true" guid="5FEE82D9-BB63-41E7-A9F9-B4A813F43398" name="Boton">
+          <expl></expl>
+        </event>
+        <event definition="true" guid="264C597A-223A-48A0-A716-5607203A2CD2" name="eFlagTrigger">
+          <expl></expl>
+        </event>
+        <event definition="true" guid="1D39F52E-423D-4521-8A5A-2281A99AD7E9" name="eNotDeb">
+          <expl></expl>
+        </event>
+      </eventsFolder>
+      <eventGroupsFolder guid="75765450-9856-41DC-9B5E-5A8C78080033" name="root">
+        <eventGroup definition="true" guid="CC5BDF61-31CA-4F16-85D2-5FC84B0EDF5C" name="EventGroup1">
+          <expl></expl>
+          <member>Boton</member>
+        </eventGroup>
+      </eventGroupsFolder>
+      <externVariablesFolder guid="A18B618C-EBA8-4AD6-863C-B8D640AAE0D7" name="root"/>
+      <internVariablesFolder guid="C8394672-B85D-4681-AF06-1D7CD8E9A8E2" name="root"/>
+      <signalsFolder guid="DB2075DD-3B40-41BA-B6F1-A21A6FF73AA2" name="root"/>
+    </elements>
+    <regions>
+      <region excluded="false" guid="AB83A1E5-6941-459B-8CF6-DF8D236881FC" name="Debounce" offPage="true">
+        <expl></expl>
+        <placement column="0" row="0"/>
+        <size height="90" width="318"/>
+        <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
+        <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+        <vertices>
+          <pseudoStateVertex excluded="false" guid="F7A66742-DB1D-48D2-8BAD-8B2BA040C284" kind="initialState" name="initial1">
+            <expl></expl>
+            <alias></alias>
+            <position bottom="294" left="1540" right="1593" top="241"/>
+            <properties value="114689"/>
+            <externalTransitions>
+              <externalTransition guid="E4462F9D-8472-4B90-AD46-EF551907CFDD" source="TopLevelStateMachine1.Debounce.initial1" target="TopLevelStateMachine1.Debounce.MaquinaTP3">
+                <expl></expl>
+                <alias>InicializarSysTick</alias>
+                <transitionProperties>
+                  <position bottom="574" left="1905" right="2312" top="392"/>
+                  <properties value="809894017"/>
+                  <routePoints>
+                    <routePoint x="1545" y="286"/>
+                    <routePoint x="1892" y="484"/>
+                    <routePoint x="1249" y="762"/>
+                  </routePoints>
+                </transitionProperties>
+                <actionSide>
+                  <actionCall actionFunction="aBoard_Init"/>
+                  <actionCall actionFunction="aGPIO_Config"/>
+                  <actionCall actionFunction="aSystemCoreClockUpdate"/>
+                  <actionCall actionFunction="aSysTickInit"/>
+                </actionSide>
+              </externalTransition>
+            </externalTransitions>
+          </pseudoStateVertex>
+          <stateVertex excluded="false" guid="E7C57EC2-6EF9-414C-9AE8-5F5182EF3706" name="MaquinaTP3">
+            <expl></expl>
+            <alias></alias>
+            <position bottom="1987" left="228" right="2500" top="762"/>
+            <stateProperties labelHeight="42" wrapText="true">
+              <properties value="65537"/>
+            </stateProperties>
+            <regions>
+              <region excluded="false" guid="1015AB55-31F0-4328-8E28-E99D7565296E" name="RegionBoton" offPage="false">
+                <expl></expl>
+                <placement column="0" row="0"/>
+                <size height="1183" width="1048"/>
+                <view colorNumber="7" pagesHorz="1" pagesVert="1"/>
+                <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+                <vertices>
+                  <stateVertex excluded="false" guid="2FF0B865-A32D-49D9-91BE-92A5677C6E37" name="Idle">
+                    <expl></expl>
+                    <alias></alias>
+                    <position bottom="1286" left="572" right="958" top="1103"/>
+                    <stateProperties labelHeight="42" wrapText="true">
+                      <properties value="1638401"/>
+                    </stateProperties>
+                    <externalTransitions>
+                      <externalTransition guid="7E774640-5802-44C3-B74D-305FDD0471F4" source="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionBoton.Idle" target="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionBoton.Hold">
+                        <expl></expl>
+                        <alias></alias>
+                        <transitionProperties>
+                          <position bottom="1545" left="381" right="876" top="1447"/>
+                          <properties value="809894017"/>
+                          <routePoints>
+                            <routePoint x="572" y="1196"/>
+                            <routePoint x="336" y="1558"/>
+                            <routePoint x="611" y="1791"/>
+                          </routePoints>
+                        </transitionProperties>
+                        <conditionSide>
+                          <trigger name="Boton"/>
+                        </conditionSide>
+                        <actionSide>
+                          <actionCall actionFunction="aRecargaDebounce"/>
+                          <actionCall actionFunction="aTriggerFlagToggle"/>
+                        </actionSide>
+                      </externalTransition>
+                    </externalTransitions>
+                  </stateVertex>
+                  <stateVertex excluded="false" guid="43E32B9C-76BA-4CC7-9ABA-D9F1B3A019B2" name="Hold">
+                    <expl></expl>
+                    <alias></alias>
+                    <position bottom="1868" left="611" right="926" top="1709"/>
+                    <stateProperties labelHeight="42" wrapText="true">
+                      <properties value="1638401"/>
+                    </stateProperties>
+                    <externalTransitions>
+                      <externalTransition guid="1A805228-B469-45C3-A7E1-71D9A1868C01" source="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionBoton.Hold" target="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionBoton.Idle">
+                        <expl></expl>
+                        <alias></alias>
+                        <transitionProperties>
+                          <position bottom="1498" left="931" right="1143" top="1418"/>
+                          <properties value="809894017"/>
+                          <routePoints>
+                            <routePoint x="926" y="1802"/>
+                            <routePoint x="1191" y="1500"/>
+                            <routePoint x="958" y="1185"/>
+                          </routePoints>
+                        </transitionProperties>
+                        <conditionSide>
+                          <trigger name="eNotDeb"/>
+                        </conditionSide>
+                      </externalTransition>
+                    </externalTransitions>
+                  </stateVertex>
+                  <pseudoStateVertex excluded="false" guid="C4311DEB-EC28-4BDF-9085-AD5C7510A8FC" kind="initialState" name="initial1">
+                    <expl></expl>
+                    <alias></alias>
+                    <position bottom="918" left="704" right="757" top="865"/>
+                    <properties value="114689"/>
+                    <externalTransitions>
+                      <externalTransition guid="5401129C-EB32-4D7D-96CD-1C992F04B6C5" source="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionBoton.initial1" target="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionBoton.Idle">
+                        <expl></expl>
+                        <alias></alias>
+                        <transitionProperties>
+                          <position bottom="1029" left="609" right="820" top="950"/>
+                          <properties value="809894017"/>
+                          <routePoints>
+                            <routePoint x="704" y="892"/>
+                            <routePoint x="609" y="950"/>
+                            <routePoint x="651" y="1103"/>
+                          </routePoints>
+                        </transitionProperties>
+                      </externalTransition>
+                    </externalTransitions>
+                  </pseudoStateVertex>
+                </vertices>
+              </region>
+              <region excluded="false" guid="6E3AC0FA-F54B-424B-9A41-16EF6355CAEE" name="RegionLed" offPage="false">
+                <expl></expl>
+                <placement column="1" row="0"/>
+                <size height="1183" width="1225"/>
+                <view colorNumber="7" pagesHorz="1" pagesVert="1"/>
+                <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+                <vertices>
+                  <stateVertex excluded="false" guid="20A03879-5FBB-461A-991D-2D0E51946A04" name="ON">
+                    <expl></expl>
+                    <alias></alias>
+                    <position bottom="1188" left="1664" right="2051" top="1005"/>
+                    <stateProperties labelHeight="42" wrapText="true">
+                      <properties value="1638401"/>
+                    </stateProperties>
+                    <externalTransitions>
+                      <externalTransition guid="9625642D-B657-4A95-8F99-5D8DD2B663A0" source="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionLed.ON" target="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionLed.OFF">
+                        <expl></expl>
+                        <alias></alias>
+                        <transitionProperties>
+                          <position bottom="1548" left="1474" right="2058" top="1349"/>
+                          <properties value="809894017"/>
+                          <routePoints>
+                            <routePoint x="1664" y="1098"/>
+                            <routePoint x="1429" y="1461"/>
+                            <routePoint x="1704" y="1693"/>
+                          </routePoints>
+                        </transitionProperties>
+                        <conditionSide>
+                          <trigger name="EventGroup1"/>
+                        </conditionSide>
+                        <actionSide>
+                          <actionCall actionFunction="aDesactivarFlag"/>
+                          <actionCall actionFunction="aLedOff"/>
+                        </actionSide>
+                      </externalTransition>
+                    </externalTransitions>
+                  </stateVertex>
+                  <stateVertex excluded="false" guid="AC1BC3DA-3585-4C67-A252-3AB43A47B728" name="OFF">
+                    <expl></expl>
+                    <alias></alias>
+                    <position bottom="1770" left="1704" right="2019" top="1611"/>
+                    <stateProperties labelHeight="42" wrapText="true">
+                      <properties value="1638401"/>
+                    </stateProperties>
+                    <externalTransitions>
+                      <externalTransition guid="122B9AFB-1AC1-4B59-BA8F-9121995F9D22" source="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionLed.OFF" target="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionLed.ON">
+                        <expl></expl>
+                        <alias></alias>
+                        <transitionProperties>
+                          <position bottom="1500" left="2024" right="2331" top="1320"/>
+                          <properties value="809894017"/>
+                          <routePoints>
+                            <routePoint x="2019" y="1704"/>
+                            <routePoint x="2283" y="1402"/>
+                            <routePoint x="2051" y="1087"/>
+                          </routePoints>
+                        </transitionProperties>
+                        <conditionSide>
+                          <trigger name="eFlagTrigger"/>
+                        </conditionSide>
+                        <actionSide>
+                          <actionCall actionFunction="aDesactivarFlag"/>
+                          <actionCall actionFunction="aLedOn"/>
+                        </actionSide>
+                      </externalTransition>
+                    </externalTransitions>
+                  </stateVertex>
+                  <pseudoStateVertex excluded="false" guid="270651F0-0741-4714-AE8C-B2548EABE537" kind="initialState" name="initial1_2">
+                    <expl></expl>
+                    <alias></alias>
+                    <position bottom="902" left="1818" right="1871" top="849"/>
+                    <properties value="114689"/>
+                    <externalTransitions>
+                      <externalTransition guid="22878A7A-3214-4939-B01F-557B4975A478" source="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionLed.initial1_2" target="TopLevelStateMachine1.Debounce.MaquinaTP3.RegionLed.ON">
+                        <expl></expl>
+                        <alias></alias>
+                        <transitionProperties>
+                          <position bottom="1000" left="1738" right="1950" top="921"/>
+                          <properties value="809894017"/>
+                          <routePoints>
+                            <routePoint x="1844" y="902"/>
+                            <routePoint x="1950" y="921"/>
+                            <routePoint x="1879" y="1005"/>
+                          </routePoints>
+                        </transitionProperties>
+                      </externalTransition>
+                    </externalTransitions>
+                  </pseudoStateVertex>
+                </vertices>
+              </region>
+            </regions>
+          </stateVertex>
+        </vertices>
+      </region>
+    </regions>
+  </topstate>
+
+</modelFile>

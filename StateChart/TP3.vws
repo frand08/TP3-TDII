@@ -1,0 +1,35 @@
+[Header]
+Filetype=visualSTATE Validator workspace
+Revision=3
+[ProjectSetup]
+ProjectFile=TP3.vsp
+IncludeExcluded=FALSE
+AutoQueue=FALSE
+TimerMsg=TRUE
+PromptActions=FALSE
+System1=0000000001BDAA02000000006A
+System1_RL=0000000001BDAA02000000006A
+NofBreakPoints=0
+[RealLink Setup]
+Plugin Module=
+Timeout=4294967040
+[Altia Properties]
+Timeout=8000
+Arguments=-xrm Altia*AltiaScene*background:#f7e400
+ResetAtConnect=1
+ResetOnReset=1
+[Trace Setup]
+Trace To=
+Trace Output=
+[Windows]
+nofSystemWnds=0
+nofEventWnds=0
+nofVariableWnds=0
+nofGuardWnds=0
+nofActionWnds=0
+nofSignalWnds=0
+nofTSF=0
+nofDynamicAnalyzeWnds=0
+nofStaticAnalyzeWnds=0
+[Watch Window]
+Number of items=0

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<NavigatorWorkspace Date="2015-08-03" Explanation="" Time="01:43:25">
+
+  <SourceControl SccAuxPath="" SccName="" SccPath="." SccProvider=""/>
+
+  <Project Active="true" ActiveSystem="System1" File="TP3.vsp">
+    <Signature CheckSum="7ec8 a452 35ea bfb2 f2fb f472" Version="64"/>
+    <Validator File="TP3.vws"/>
+    <Report Creator="0" File="coder\vscoder.cre"/>
+  </Project>
+
+</NavigatorWorkspace>

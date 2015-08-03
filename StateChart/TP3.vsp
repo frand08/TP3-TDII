@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<projectFile format="8" xmlns="http://www.iar.com/visualSTATE/2011/Modelfile">
+
+  <project dropSignalIfQueueFull="false" guid="DA25BD33-4F68-441F-AB00-9B01CB39C696" name="TP3">
+    <expl></expl>
+    <SCCInfo auxPath="" localPath="." project="" provider=""/>
+    <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
+    <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+    <settings>
+      <colors>
+        <color rgb="0X000000"/>
+        <color rgb="0X637AFF"/>
+        <color rgb="0XB1D991"/>
+        <color rgb="0XFF0000"/>
+        <color rgb="0XF0DCDC"/>
+        <color rgb="0XD2FAFA"/>
+        <color rgb="0XFFFFFF"/>
+        <color rgb="0XFEFAF3"/>
+        <color rgb="0X00BBFA"/>
+        <color rgb="0X00E0FF"/>
+        <color rgb="0XEAC771"/>
+        <color rgb="0X835A00"/>
+        <color rgb="0X37C2AE"/>
+        <color rgb="0X808000"/>
+        <color rgb="0XC0C0C0"/>
+        <color rgb="0X808080"/>
+      </colors>
+      <fonts>
+        <font>-13 400 0 255 "Arial"</font>
+        <font>-13 700 0 255 "Arial"</font>
+        <font>-11 400 0 255 "Arial"</font>
+        <font>-11 700 0 255 "Arial"</font>
+        <font>-13 400 0 255 "Times New Roman"</font>
+        <font>-13 700 0 255 "Times New Roman"</font>
+        <font>-11 400 0 255 "Times New Roman"</font>
+        <font>-11 700 0 255 "Times New Roman"</font>
+      </fonts>
+      <pageSetup>
+        <footer center="" height="12" left="&amp;FN" right="&amp;PN">
+          <font>-13 400 0 255 "Times New Roman"</font>
+        </footer>
+        <header center="&amp;NF" height="12" left="" right="">
+          <font>-13 400 0 255 "Times New Roman"</font>
+        </header>
+        <pageLayout height="297" marginBottom="21" marginLeft="3" marginRight="0" marginTop="3" paperType="0" portrait="true" width="210"/>
+        <elementPrintSetup print="true">
+          <font>-13 400 0 255 "Times New Roman"</font>
+        </elementPrintSetup>
+      </pageSetup>
+    </settings>
+    <elements>
+      <actionsFolder guid="FE2C8C71-0B29-42CB-82D9-C3E10E60F319" name="root"/>
+      <constantsFolder guid="EC58CCC6-B4A5-44AA-911E-EB245DFF060C" name="root"/>
+      <eventsFolder guid="DDF9C802-D10E-4029-A815-ED7A20EDC8B2" name="root"/>
+      <eventGroupsFolder guid="9411C0E8-A2B6-4B91-AD30-0754B4B48688" name="root"/>
+      <externVariablesFolder guid="991EB834-E71A-478D-8A7B-D988ECAC059B" name="root"/>
+      <internVariablesFolder guid="43C534DB-2268-482D-8232-509520C12BD1" name="root"/>
+      <signalsFolder guid="0C1D7C06-7488-400D-87E9-811DC44B25B6" name="root"/>
+    </elements>
+    <systems>
+      <system guid="9316B2C5-5B50-4649-AFCA-643CABBB5658" name="System1" numberOfInstances="1" signalQueueSize="0">
+        <expl></expl>
+        <alias></alias>
+        <view colorNumber="7" pagesHorz="2" pagesVert="2"/>
+        <diagramInformation textDisplayNote="preserve" textDisplayState="preserve" textDisplayTransition="preserve"/>
+        <position bottom="344" left="26" right="344" top="26"/>
+        <properties value="1048578"/>
+        <files>
+          <file>TopLevelStateMachine1.vsr</file>
+        </files>
+      </system>
+    </systems>
+  </project>
+
+</projectFile>

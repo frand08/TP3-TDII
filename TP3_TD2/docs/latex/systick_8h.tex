@@ -1,0 +1,52 @@
+\hypertarget{systick_8h}{\section{app/inc/systick.h File Reference}
+\label{systick_8h}\index{app/inc/systick.\-h@{app/inc/systick.\-h}}
+}
+
+
+Defines y prototipos de systick.  
+
+
+{\ttfamily \#include \char`\"{}board.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}chip.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{systick_8h_a0dd2806101bedd00b314bff62b47e063}{\#define {\bfseries C\-L\-O\-C\-K\-\_\-\-D\-I\-V\-I\-D\-E\-R}~10}\label{systick_8h_a0dd2806101bedd00b314bff62b47e063}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{systick_8h_a88cd69295cacceb1e55b8ccb097e1596}{Setup\-\_\-\-Sys\-Tick} (void)
+\begin{DoxyCompactList}\small\item\em Funcion de configuracion de la interrupcion por Sys\-Tick. \end{DoxyCompactList}\item 
+void \hyperlink{systick_8h_ab5e09814056d617c521549e542639b7e}{Sys\-Tick\-\_\-\-Handler} (void)
+\begin{DoxyCompactList}\small\item\em I\-S\-R de la interrupcion por Sys\-Tick. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines y prototipos de systick. 
+
+\subsection{Function Documentation}
+\hypertarget{systick_8h_a88cd69295cacceb1e55b8ccb097e1596}{\index{systick.\-h@{systick.\-h}!Setup\-\_\-\-Sys\-Tick@{Setup\-\_\-\-Sys\-Tick}}
+\index{Setup\-\_\-\-Sys\-Tick@{Setup\-\_\-\-Sys\-Tick}!systick.h@{systick.\-h}}
+\subsubsection[{Setup\-\_\-\-Sys\-Tick}]{\setlength{\rightskip}{0pt plus 5cm}void Setup\-\_\-\-Sys\-Tick (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{systick_8h_a88cd69295cacceb1e55b8ccb097e1596}
+
+
+Funcion de configuracion de la interrupcion por Sys\-Tick. 
+
+Se utiliza a Sys\-Tick\-\_\-\-Config para setear cada cuantos Ticks se generara la interrupion \hypertarget{systick_8h_ab5e09814056d617c521549e542639b7e}{\index{systick.\-h@{systick.\-h}!Sys\-Tick\-\_\-\-Handler@{Sys\-Tick\-\_\-\-Handler}}
+\index{Sys\-Tick\-\_\-\-Handler@{Sys\-Tick\-\_\-\-Handler}!systick.h@{systick.\-h}}
+\subsubsection[{Sys\-Tick\-\_\-\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void Sys\-Tick\-\_\-\-Handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{systick_8h_ab5e09814056d617c521549e542639b7e}
+
+
+I\-S\-R de la interrupcion por Sys\-Tick. 
+
+Solo se hace un Toggle del Board\-\_\-\-L\-E\-D(0) 
