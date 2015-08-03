@@ -35,7 +35,7 @@ int main(void)
 	   Chip_GPIO_Init is not called again */
 	Board_Init();
 	Board_LED_Set(0, false);
-
+	Setup_SysTick();
 	GPIO_Config();
 	/* Wait for interrupts - LED will toggle on each wakeup event */
 	while (1) {
